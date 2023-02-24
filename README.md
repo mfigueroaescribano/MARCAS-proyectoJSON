@@ -13,7 +13,7 @@ Lista los libros que contienen una subcadena en su título y estén por debajo d
 Introduce el nombre de un autor y muestra todos los libros que ha escrito
 
 ### Ejercicio 5
-Introduce el ISBN del libro y una vez te devuelva el título, autor y descripción te de la posibilidad de eliminar ese libro, actualizar su título y descripción o su autor.
+Introduce el ISBN del libro y una vez te devuelva el título, autores (y el recuento de autores) y descripción te de la posibilidad de eliminar ese libro, actualizar su título y descripción.
 
 ### Información
 Miguel Figueroa Escribano  
