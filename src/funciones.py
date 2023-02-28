@@ -44,5 +44,19 @@ def librosPorAutor(listaLibros):
 def actualizacionPorISBN(listaLibros):
     isbnBusqueda = input("Introduzca el ISBN del libro a buscar: ")
     for libro in listaLibros["books"]:
-        if isbnBusqueda in libro["isbn"]:
+        if isbnBusqueda == libro["isbn"]:
                 print("Hemos encontrado el siguiente libro: ", libro["title"])
+                print("¿Qué desea hacer? 1 - Eliminar libro, 2 - Actualizar titulo, 3  -Actualizar descripcion")
+                opcionISBN = int(input("Introduzca una opción: "))
+
+                while opcionISBN !=3:
+                    if opcionISBN==1:
+                        listaLibros.pop(libro["isbn"])
+                    
+                    elif opcionISBN==2:
+                        nuevotitulo = input("Introduzca el nuevo titulo del libro: ")
+                        libro["title"] = nuevotitulo
+
+                    elif opcionISBN==3:
+                        nuevadescripcion = input("Introduzca una nueva descripción corta: ")
+                        libro["shortDescription"] = nuevadescripcion
